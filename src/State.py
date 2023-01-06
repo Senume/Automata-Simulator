@@ -1,5 +1,3 @@
-import Transition
-
 class State:
     """ This is a class to define the properties of an individual State in a automata"""
 
@@ -24,4 +22,27 @@ class State:
             None
             """
 
-        self.Transition[InString] = Transition(self, InString, OutString, OutState)   
+        if InString in self.Transition.keys():
+            #print("Transition with same Instring available")
+            self.Transition[InString].append(Transition(self, InString,OutString= OutString, OutState = OutState))
+        else:
+            #print("New input string Transition")
+            self.Transition[InString] = []
+            self.Transition[InString].append(Transition(self, InString, OutString = OutString, OutState = OutState))
+
+    def CheckTransition(self, InputAlphabet):
+
+        if InputAlphabet not in self.Transition.keys():
+            #print("No Transition as such")
+            return [-1]
+        elif InputAlphabet in self.Transition.keys():
+
+            Transition_Output_List = []
+            for Transit in self.Transition[InputAlphabet]:
+                Transition_Output_List.append(Transit.Output())
+            
+            if '' in self.Transition.keys() and '' != InputAlphabet:
+                for epilsonTransit in self.Transition['']:
+                    Transition_Output_List.append(epilsonTransit.Output())
+
+            return Transition_Output_List

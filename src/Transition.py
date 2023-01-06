@@ -13,3 +13,6 @@ class Transition:
         self.InString = InString
         self.OutString = OutString
         self.OutState = OutState
+
+    def Output(self):
+        return [self.OutString, self.OutState]
