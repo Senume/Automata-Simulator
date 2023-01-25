@@ -1,6 +1,6 @@
 # **Automata Simulator**
 ## **INTRODUCTION**
-- - -
+
 Welcome to the Automaton repository. This repository contains the code and resources for simulating automata, including finite state machines and pushdown automata.
 
 The goal of this project is to provide a tool for simulating and understand the behavior of different types of automata. This can be useful for educational purposes, as well as for testing and debugging the behavior of automata in various applications. The code is written in Python.
@@ -14,7 +14,7 @@ The repository is organized as follows:
 
 
 ## **GETTING STARTED**
-- - -
+
 
 1. Clone the repository
 
@@ -31,5 +31,5 @@ The repository is organized as follows:
 
 
 ## **SUPPORT**
-- - - 
+
 If you have any questions or encounter any issues, please feel free to open an issue on this repository or contact the authors. 
