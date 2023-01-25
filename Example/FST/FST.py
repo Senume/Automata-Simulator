@@ -2,7 +2,7 @@ import os, sys
 dir = os.getcwd()
 sys.path.insert(1, dir + '/src')
 
-
+# Refer the Morphological Generator.pdf for understanding the design of the automata
 from Automata import Automata
 from Machine import Machine
 
