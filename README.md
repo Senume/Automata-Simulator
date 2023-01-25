@@ -27,4 +27,4 @@ If you have any questions or encounter any issues, please feel free to open an i
     ```
 
     ```
-![command_image](https://user-images.githubusercontent.com/101030274/214620285-f93966dd-8beb-4099-a419-008d3b7b93f1.jpg)
+    ![command_image](https://user-images.githubusercontent.com/101030274/214620285-f93966dd-8beb-4099-a419-008d3b7b93f1.jpg)
