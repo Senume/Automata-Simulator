@@ -27,7 +27,7 @@ The repository is organized as follows:
     ```
     python3 dir/example_automata.py Inputstring
     ```
-    ![command_image](https://user-images.githubusercontent.com/101030274/214620285-f93966dd-8beb-4099-a419-008d3b7b93f1.jpg)
+    ![command_image](https://user-images.githubusercontent.com/101030274/214631497-95fa1234-2484-4266-b64c-15ab54cb7835.png)
 
 
 ## **SUPPORT**
