@@ -19,7 +19,7 @@ The repository is organized as follows:
 1. Clone the repository
 
     ``` 
-    git clone git@github.com:Senume/Automata-Simulator.git
+    git clone https://github.com/Senume/Automata-Simulator.git
     ```
 
 2. Create a new automata discription file and save it. (As such in given in the Example directory)
