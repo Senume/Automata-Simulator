@@ -7,7 +7,7 @@ class Transition:
             Instring   -   Transition string input
             OutString  -   Transition output sting
             OutState   -   Next state's ID of the transition
-        """
+            """
 
         self.InState = InState
         self.InString = InString
@@ -15,4 +15,6 @@ class Transition:
         self.OutState = OutState
 
     def Output(self):
+        """ Returns the output if any exists
+            """
         return [self.OutString, self.OutState]

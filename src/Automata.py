@@ -1,3 +1,5 @@
+from State import State
+
 class Automata:
     """ Basic class to define the automata's structure and its transitions. Further this automata model and be deployed in acceptor or automaton for applications."""
 

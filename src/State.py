@@ -1,3 +1,5 @@
+from Transition import Transition
+
 class State:
     """ This is a class to define the properties of an individual State in a automata"""
 
@@ -5,7 +7,8 @@ class State:
         """ Initailize the State with Arguement:
             ID           -  Unique Identifier for the State (String or Integer)
             StateType    -  Defines the if the State is Terminal State or vice versa (Boolean)
-            Transition   -  COntains all transitions from the State (Dictionary)"""
+            Transition   -  COntains all transitions from the State (Dictionary)
+            """
 
         self.ID = name
         self.StateType = FinalState

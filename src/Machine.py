@@ -6,10 +6,8 @@ class Machine:
         self.InputString = InputString
 
     def Run(self,CurrentState, I = None, String = None):
-        #print("Current State: ",CurrentState, " Current Input: ", I)
 
         if I is None:
-            #print("checking for terminal case --->")
             Terminal_Transition_outputs = self.Automata.States[CurrentState].CheckTransition(InputAlphabet = '')
             if len(Terminal_Transition_outputs) > 0 and Terminal_Transition_outputs[0] != -1:
                 Terminal_Transition_outputs = self.Automata.States[CurrentState].CheckTransition(InputAlphabet = '')
@@ -28,10 +26,8 @@ class Machine:
 
             
             elif self.Automata.States[CurrentState].StateType == True:
-                #print([[True]])
                 return [[True]]
             else:
-                #print([[False]])
                 return [[False]]
             
         else:
@@ -58,7 +54,7 @@ class Machine:
                         Output.append(S) 
                 return Output
     
-    def Machine_Output(self):
+    def Machine_Automata_Output(self):
 
         print("Initiating machine")
         OutputList = self.Run(self.IntialState, I= self.InputString[0], String=self.InputString[1:])
@@ -69,4 +65,5 @@ class Machine:
                 Generated_String = "".join(Output)
                 print("Input String: " + self.InputString)
                 print("Generated Output String -->" + Generated_String)
+                break
 
